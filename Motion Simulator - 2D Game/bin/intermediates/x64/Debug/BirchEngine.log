@@ -1,0 +1,41 @@
+﻿  AssetManager.cpp
+  Collision.cpp
+  ECS.cpp
+  Game.cpp
+  main.cpp
+  Map.cpp
+  TextureManager.cpp
+  Vector2D.cpp
+  Generating Code...
+AssetManager.obj : error LNK2019: unresolved external symbol SDL_GetTicks referenced in function "public: virtual void __cdecl SpriteComponent::update(void)" (?update@SpriteComponent@@UEAAXXZ)
+Game.obj : error LNK2001: unresolved external symbol SDL_GetTicks
+main.obj : error LNK2001: unresolved external symbol SDL_GetTicks
+AssetManager.obj : error LNK2019: unresolved external symbol TTF_OpenFont referenced in function "public: void __cdecl AssetManager::AddFont(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)" (?AddFont@AssetManager@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H@Z)
+Game.obj : error LNK2019: unresolved external symbol SDL_FreeSurface referenced in function "public: void __cdecl UILabel::SetLabelText(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?SetLabelText@UILabel@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z)
+TextureManager.obj : error LNK2001: unresolved external symbol SDL_FreeSurface
+Game.obj : error LNK2019: unresolved external symbol SDL_CreateWindow referenced in function "public: void __cdecl Game::init(char const *,int,int,bool)" (?init@Game@@QEAAXPEBDHH_N@Z)
+Game.obj : error LNK2019: unresolved external symbol SDL_DestroyWindow referenced in function "public: void __cdecl Game::clean(void)" (?clean@Game@@QEAAXXZ)
+Game.obj : error LNK2019: unresolved external symbol SDL_PollEvent referenced in function "public: void __cdecl Game::handleEvents(void)" (?handleEvents@Game@@QEAAXXZ)
+Game.obj : error LNK2019: unresolved external symbol SDL_CreateRenderer referenced in function "public: void __cdecl Game::init(char const *,int,int,bool)" (?init@Game@@QEAAXPEBDHH_N@Z)
+Game.obj : error LNK2019: unresolved external symbol SDL_CreateTextureFromSurface referenced in function "public: void __cdecl UILabel::SetLabelText(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?SetLabelText@UILabel@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z)
+TextureManager.obj : error LNK2001: unresolved external symbol SDL_CreateTextureFromSurface
+Game.obj : error LNK2019: unresolved external symbol SDL_QueryTexture referenced in function "public: void __cdecl UILabel::SetLabelText(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?SetLabelText@UILabel@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z)
+Game.obj : error LNK2019: unresolved external symbol SDL_SetRenderDrawColor referenced in function "public: void __cdecl Game::init(char const *,int,int,bool)" (?init@Game@@QEAAXPEBDHH_N@Z)
+Game.obj : error LNK2019: unresolved external symbol SDL_RenderClear referenced in function "public: void __cdecl Game::render(void)" (?render@Game@@QEAAXXZ)
+Game.obj : error LNK2019: unresolved external symbol SDL_RenderCopy referenced in function "public: virtual void __cdecl UILabel::draw(void)" (?draw@UILabel@@UEAAXXZ)
+Game.obj : error LNK2019: unresolved external symbol SDL_RenderPresent referenced in function "public: void __cdecl Game::render(void)" (?render@Game@@QEAAXXZ)
+Game.obj : error LNK2019: unresolved external symbol SDL_DestroyRenderer referenced in function "public: void __cdecl Game::clean(void)" (?clean@Game@@QEAAXXZ)
+Game.obj : error LNK2019: unresolved external symbol SDL_Init referenced in function "public: void __cdecl Game::init(char const *,int,int,bool)" (?init@Game@@QEAAXPEBDHH_N@Z)
+Game.obj : error LNK2019: unresolved external symbol SDL_Quit referenced in function "public: void __cdecl Game::clean(void)" (?clean@Game@@QEAAXXZ)
+Game.obj : error LNK2019: unresolved external symbol TTF_Init referenced in function "public: void __cdecl Game::init(char const *,int,int,bool)" (?init@Game@@QEAAXPEBDHH_N@Z)
+Game.obj : error LNK2019: unresolved external symbol TTF_RenderText_Blended referenced in function "public: void __cdecl UILabel::SetLabelText(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?SetLabelText@UILabel@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z)
+main.obj : error LNK2019: unresolved external symbol SDL_Delay referenced in function SDL_main
+Map.obj : error LNK2019: unresolved external symbol SDL_DestroyTexture referenced in function "public: virtual __cdecl TileComponent::~TileComponent(void)" (??1TileComponent@@UEAA@XZ)
+TextureManager.obj : error LNK2019: unresolved external symbol SDL_RenderCopyEx referenced in function "public: static void __cdecl TextureManager::Draw(struct SDL_Texture *,struct SDL_Rect,struct SDL_Rect,enum SDL_RendererFlip)" (?Draw@TextureManager@@SAXPEAUSDL_Texture@@USDL_Rect@@1W4SDL_RendererFlip@@@Z)
+TextureManager.obj : error LNK2019: unresolved external symbol IMG_Load referenced in function "public: static struct SDL_Texture * __cdecl TextureManager::LoadTexture(char const *)" (?LoadTexture@TextureManager@@SAPEAUSDL_Texture@@PEBD@Z)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\SDL2\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86\SDL2.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\SDL2\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86\SDL2main.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\SDL2\SDL2_image-devel-2.0.1-VC\SDL2_image-2.0.1\lib\x86\SDL2_image.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\SDL2\SDL2_ttf-2.0.14\lib\x86\SDL2_ttf.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Suraj\Desktop\Sem 4\BirchEngine-master\bin\x64\Debug\BirchEngine.exe : fatal error LNK1120: 23 unresolved externals
